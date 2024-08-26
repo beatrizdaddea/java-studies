@@ -220,8 +220,30 @@ A estrutura de diretórios em um projeto Java é essencial para manter o código
   - Os testes unitários devem estar em um diretório separado, como `src/test/java` para o código de teste e `src/test/resources` para os recursos de teste.
 
 ## Exemplo de Estrutura de Diretórios
-my-project/ ├── src/ │ ├── main/ │ │ ├── java/ │ │ │ └── com/ │ │ │ └── exemplo/ │ │ │ └── projeto/ │ │ │ ├── Main.java │ │ │ └── model/ │ │ │ └── Usuario.java │ │ └── resources/ │ │ └── config.properties │ └── test/ │ ├── java/ │ │ └── com/ │ │ └── exemplo/ │ │ └── projeto/ │ │ └── MainTest.java │ └── resources/ │ └── test-config.properties ├── build.gradle (ou pom.xml para Maven) └── README.md
-
+```plaintext
+my-project/
+ ├── src/
+ │   ├── main/
+ │   │   ├── java/
+ │   │   │   └── com/
+ │   │   │       └── exemplo/
+ │   │   │           └── projeto/
+ │   │   │               ├── Main.java
+ │   │   │               └── model/
+ │   │   │                   └── Usuario.java
+ │   │   └── resources/
+ │   │       └── config.properties
+ │   └── test/
+ │       ├── java/
+ │       │   └── com/
+ │       │       └── exemplo/
+ │       │           └── projeto/
+ │       │               └── MainTest.java
+ │       └── resources/
+ │           └── test-config.properties
+ ├── build.gradle  (ou pom.xml para Maven)
+ └── README.md
+```
 
 ## Detalhamento dos Diretórios
 
