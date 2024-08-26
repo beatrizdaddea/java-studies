@@ -16,10 +16,8 @@ Este documento descreve as convenções de nomenclatura recomendadas e as declar
     - [Declaração de Métodos](#declaração-de-métodos)
     - [Declaração de Variáveis](#declaração-de-variáveis)
     - [Declaração de Constantes](#declaração-de-constantes)
-    - 
 - [Convenção de Diretórios em Java](#convenção-de-diretórios-em-java)
   - [Estrutura de Diretórios Padrão](estrutura-de-diretórios-padrão)
-    ```
 </details>
 
 ## Padrões de Nomenclatura
