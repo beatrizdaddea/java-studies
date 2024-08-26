@@ -22,7 +22,6 @@ Este documento descreve as convenções de nomenclatura recomendadas e as declar
     ```
 </details>
 
-
 ## Padrões de Nomenclatura
 
 Padrões de nomenclatura são importantes para garantir que o código seja legível e mantenha uma consistência que facilita a manutenção e colaboração. Em Java, seguir convenções de nomenclatura ajuda a manter um padrão uniforme e compreensível em projetos de software.
