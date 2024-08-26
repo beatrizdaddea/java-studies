@@ -16,7 +16,10 @@ Este documento descreve as convenções de nomenclatura recomendadas e as declar
     - [Declaração de Métodos](#declaração-de-métodos)
     - [Declaração de Variáveis](#declaração-de-variáveis)
     - [Declaração de Constantes](#declaração-de-constantes)
-  ```
+    - 
+- [Convenção de Diretórios em Java](#convenção-de-diretórios-em-java)
+  - [Estrutura de Diretórios Padrão](estrutura-de-diretórios-padrão)
+    ```
 </details>
 
 
@@ -198,3 +201,54 @@ Pacotes ajudam a organizar classes relacionadas. A declaração de um pacote dev
 import nomeDoPacote.NomeDaClasse;
 import java.util.ArrayList;
 ```
+
+# Convenção de Diretórios em Java
+
+A estrutura de diretórios em um projeto Java é essencial para manter o código organizado e fácil de gerenciar. Abaixo estão as diretrizes e boas práticas para organizar diretórios em projetos Java.
+
+## Estrutura de Diretórios Padrão
+
+1. **Diretório Base:**
+  - O diretório base geralmente é chamado de `src` (source) ou `src/main/java` para projetos Maven/Gradle. É onde o código-fonte Java é armazenado.
+
+2. **Pacotes:**
+  - Dentro do diretório base, crie subdiretórios que correspondem aos pacotes. Por exemplo, para um pacote `com.exemplo.projeto`, você deve ter um diretório `com/exemplo/projeto`.
+
+3. **Diretórios para Recursos:**
+  - Coloque arquivos de recursos como configurações e arquivos estáticos em um diretório separado, como `resources` ou `src/main/resources` (em projetos Maven/Gradle).
+
+4. **Diretórios de Teste:**
+  - Os testes unitários devem estar em um diretório separado, como `src/test/java` para o código de teste e `src/test/resources` para os recursos de teste.
+
+## Exemplo de Estrutura de Diretórios
+my-project/ ├── src/ │ ├── main/ │ │ ├── java/ │ │ │ └── com/ │ │ │ └── exemplo/ │ │ │ └── projeto/ │ │ │ ├── Main.java │ │ │ └── model/ │ │ │ └── Usuario.java │ │ └── resources/ │ │ └── config.properties │ └── test/ │ ├── java/ │ │ └── com/ │ │ └── exemplo/ │ │ └── projeto/ │ │ └── MainTest.java │ └── resources/ │ └── test-config.properties ├── build.gradle (ou pom.xml para Maven) └── README.md
+
+
+## Detalhamento dos Diretórios
+
+1. **`src/main/java`:**
+  - Contém o código-fonte principal do aplicativo. Organize classes e interfaces em pacotes correspondentes à estrutura de diretórios.
+
+2. **`src/main/resources`:**
+  - Armazena recursos como arquivos de configuração, propriedades, XMLs, etc. Esses arquivos são incluídos no classpath do projeto.
+
+3. **`src/test/java`:**
+  - Contém o código-fonte dos testes unitários. A estrutura de pacotes deve refletir a estrutura de `src/main/java`, permitindo que os testes correspondam às classes que estão testando.
+
+4. **`src/test/resources`:**
+  - Contém recursos necessários para testes, como arquivos de configuração de teste ou dados de entrada.
+
+## Boas Práticas
+
+1. **Consistência:**
+  - Mantenha uma estrutura de diretórios consistente em todos os projetos para facilitar a navegação e o entendimento do código.
+
+2. **Segregação:**
+  - Separe claramente o código de produção e o código de teste, além dos recursos de produção e os recursos de teste.
+
+3. **Modularidade:**
+  - Organize o código e os recursos de forma modular para facilitar a manutenção e a escalabilidade.
+
+4. **Documentação:**
+  - Inclua um arquivo `README.md` na raiz do projeto para fornecer informações sobre a estrutura do projeto e instruções de uso.
+
