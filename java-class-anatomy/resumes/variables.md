@@ -226,7 +226,7 @@ my-project/
  │   │   │   └── com/
  │   │   │       └── exemplo/
  │   │   │           └── projeto/
- │   │   │               ├── Main.java
+ │   │   │               ├── SmartTv.java
  │   │   │               └── model/
  │   │   │                   └── Usuario.java
  │   │   └── resources/

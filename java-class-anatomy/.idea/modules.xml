@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../exercises/SmartTv/SmartTv.iml" filepath="$PROJECT_DIR$/../exercises/SmartTv/SmartTv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../exercises/exercises.iml" filepath="$PROJECT_DIR$/../exercises/exercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-class-anatomy.iml" filepath="$PROJECT_DIR$/java-class-anatomy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../exercises/terminal-bank/terminal-bank.iml" filepath="$PROJECT_DIR$/../exercises/terminal-bank/terminal-bank.iml" />
     </modules>
   </component>
 </project>
